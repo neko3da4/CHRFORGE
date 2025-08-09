@@ -13,6 +13,10 @@
 
 ---
 
+<p align="center">
+  📄 <a href="./README.md">English README</a> | 📄 <a href="./README-ja.md">日本語 README</a>
+</p>
+
 ## Disclaimer
 
 By using this library, please understand and agree to the following:
