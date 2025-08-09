@@ -8,8 +8,12 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from typing import Optional, Dict, Any
-from .devices import DeviceType, DeviceDetails, DeviceConfigurationFactory
-from .endpoints import EndpointRegistry
+from CHRFORGE.config.devices import (
+    DeviceType,
+    DeviceDetails,
+    DeviceConfigurationFactory,
+)
+from CHRFORGE.config.endpoints import EndpointRegistry
 
 
 # Constants matching original config

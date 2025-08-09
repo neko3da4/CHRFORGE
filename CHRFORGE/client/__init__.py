@@ -4,8 +4,8 @@ Client package for CHRFORGE client.
 Provides request client, base client functionality, and client management.
 """
 
-from .request_client import RequestClient
-from .base_client import BaseClient, InternalError
+from CHRFORGE.client.request_client import RequestClient
+from CHRFORGE.client.base_client import BaseClient, InternalError
 
 __all__ = [
     "RequestClient",

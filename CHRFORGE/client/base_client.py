@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from typing import Any, Dict, Optional, Callable
 from urllib.parse import urlparse
 
-from ..config import ClientConfiguration, DeviceDetails
+from CHRFORGE.config import ClientConfiguration, DeviceDetails
 
 
 class InternalError(Exception):

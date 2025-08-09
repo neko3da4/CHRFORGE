@@ -9,7 +9,7 @@ For new code, prefer importing from the config package directly:
 """
 
 # Import required symbols from the new config package for backward compatibility
-from .config import (
+from CHRFORGE.config import (
     DeviceType,
     DeviceDetails,
     DeviceConfigurationFactory,
@@ -24,7 +24,7 @@ from .config import (
     DEFAULT_LANGUAGE,
     DEFAULT_SERVICE_REGION,
 )
-from .config.client_config import Config
+from CHRFORGE.config.client_config import Config
 
 # Re-export the main Config class for backward compatibility
 __all__ = [

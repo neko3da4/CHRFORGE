@@ -4,15 +4,20 @@ Configuration package for CHRFORGE client.
 Provides device configurations, endpoint management, and client settings.
 """
 
-from .devices import (
+from CHRFORGE.config.devices import (
     DeviceType,
     DeviceDetails,
     DeviceConfigurationFactory,
     get_device_details,
     is_v3_supported,
 )
-from .endpoints import APIEndpoint, EndpointType, EndpointRegistry, DomainConfiguration
-from .client_config import (
+from CHRFORGE.config.endpoints import (
+    APIEndpoint,
+    EndpointType,
+    EndpointRegistry,
+    DomainConfiguration,
+)
+from CHRFORGE.config.client_config import (
     ClientConfiguration,
     RegexPatterns,
     DEFAULT_LANGUAGE,
