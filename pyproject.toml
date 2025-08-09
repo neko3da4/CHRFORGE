@@ -1,0 +1,81 @@
+[project]
+name = "chrforge"
+version = "0.1.0"
+description = "Personal Forge version of CHRLINE with enhanced features."
+authors = [{ name = "nezumi0627" }]
+maintainers = [{ name = "nezumi0627" }]
+license = {text = "BSD-3-Clause"}
+keywords = ["line", "chrforge", "chrline", "messaging", "api"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">=3.8"
+urls = {
+    "Homepage": "https://github.com/neko3da4/CHRFORGE",
+    "Bug Reports": "https://github.com/neko3da4/CHRFORGE/issues",
+    "Source": "https://github.com/neko3da4/CHRFORGE",
+    "Documentation": "https://github.com/neko3da4/CHRFORGE/blob/main/README.md",
+}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["chrforge"]
+include = [
+    "chrforge/__init__.py",
+    "chrforge/*.py",
+    "chrforge/api/*.py",
+    "chrforge/utils/*.py",
+    "chrforge/config.py",
+]
+
+[tool.ruff]
+line-length = 79
+show-fixes = true
+extend-exclude = ["chrforge/openapi/"]
+
+[tool.ruff.format]
+docstring-code-format = false
+line-ending = "lf"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "TID252", "ISC003"]
+fixable = ["ALL"]
+ignore = []
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"chrforge/config.py" = ["E5"]
+
+[tool.mypy]
+explicit_package_bases = true
+warn_return_any = true
+no_implicit_optional = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+follow_imports = "skip"
+exclude = ["^venv/*", "^chrforge/openapi/*"]
