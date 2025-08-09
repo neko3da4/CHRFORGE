@@ -54,16 +54,17 @@ but aims to provide a new development environment that meets developers' needs.
 
 ## Origin of the Project Name
 
-| Item    | Meaning | Description                          |
-|---------|---------|------------------------------------|
-| **CHR** | Chrome  | Inheritance from the original CHRLINE project |
-| **FORGE** | Forging | Crafting and creating value through technology |
+| Item      | Meaning  | Description                                  |
+|-----------|----------|----------------------------------------------|
+| **CHR**   | Chrome   | Inheritance from the original CHRLINE project |
+| **FORGE** | Forging  | Crafting and creating value through technology |
 
 The name embodies the ideas of precise design, continuous improvement, technological heritage, and readiness for the future.
 
 ---
 
 ## Developer
+
 <table>
   <tr>
     <td style="vertical-align: middle; padding-right: 1em;">
@@ -83,14 +84,14 @@ The name embodies the ideas of precise design, continuous improvement, technolog
 
 ## Development Environment
 
-| Item          | Technology      | Version        |
-|---------------|-----------------|----------------|
-| Programming Language | Python         | 3.11.11+      |
-| Development Platform | iOS            | 26 Beta 2     |
-| OS            | Windows         | 11             |
-| Editor        | Visual Studio Code | Latest      |
-| Network Analysis Tool | Reqable Pro    | Latest       |
-| Analysis Tool | jadx-gui         | Latest         |
+| Item                | Technology          | Version    |
+|---------------------|---------------------|------------|
+| Programming Language | Python              | 3.11.11+   |
+| Development Platform | iOS                 | 26 Beta 2  |
+| OS                  | Windows             | 11         |
+| Editor              | Visual Studio Code  | Latest     |
+| Network Analysis Tool| Reqable Pro         | Latest     |
+| Analysis Tool       | jadx-gui            | Latest     |
 
 ---
 
@@ -136,12 +137,13 @@ Please understand and agree to the following when donating tokens:
 
 ## Respect to Predecessors
 
-| Project          | Status     | Description                 | Repository Link                                   |
-|------------------|------------|-----------------------------|-------------------------------------------------|
-| CHRLINE          | Archived   | Foundational technology and inspiration | [Link](https://github.com/DeachSword/CHRLINE)          |
-| CHRLINE-Thrift   | Technical  | Reference for protocol implementation | [Link](https://github.com/DeachSword/CHRLINE-Thrift)   |
-| CHRLINE-Patch    | Revival    | Ongoing development          | [Link](https://github.com/WEDeach/CHRLINE-Patch)       |
-| line-py          | Discontinued | Original library             | [Link](https://github.com/fadhiilrachman/line-py)      |
+| Project          | Status       | Description                          | Repository Link                                   |
+|------------------|--------------|------------------------------------|-------------------------------------------------|
+| CHRLINE          | Archived     | Foundational technology and inspiration | [Link](https://github.com/DeachSword/CHRLINE)          |
+| CHRLINE-Thrift   | Thrift       | Reference for protocol implementation | [Link](https://github.com/DeachSword/CHRLINE-Thrift)   |
+| CHRLINE-Patch    | Revival      | Ongoing development                 | [Link](https://github.com/WEDeach/CHRLINE-Patch)       |
+| line-py          | Discontinued | Original library                    | [Link](https://github.com/fadhiilrachman/line-py)      |
+| linejs           | js版         | JavaScriptによる実装例              | [リンク](https://github.com/evex-dev/linejs)             |
 
 ---
 

@@ -54,16 +54,17 @@
 
 ## プロジェクト名の由来
 
-| 項目   | 意味   | 説明                            |
-|--------|--------|--------------------------------|
-| **CHR**   | Chrome | 元祖CHRLINEプロジェクトの継承   |
-| **FORGE** | 鍛造   | 技術の練磨と価値の創造           |
+| 項目       | 意味   | 説明                          |
+|------------|--------|------------------------------|
+| **CHR**    | Chrome | 元祖CHRLINEプロジェクトの継承   |
+| **FORGE**  | 鍛造   | 技術の練磨と価値の創造           |
 
 名前には「精密な設計」「継続的な改善」「技術の継承」「未来への対応」の想いが込められています。
 
 ---
 
 ## 開発者
+
 <table>
   <tr>
     <td style="vertical-align: middle; padding-right: 1em;">
@@ -83,14 +84,14 @@
 
 ## 開発環境
 
-| 項目       | 使用技術         | バージョン      |
-|------------|------------------|-----------------|
-| 開発言語   | Python           | 3.11.11+        |
-| 開発環境   | iOS              | 26 Beta 2       |
-| OS         | Windows          | 11              |
-| エディタ   | Visual Studio Code| 最新版          |
-| 通信解析   | Reqable Pro      | 最新版          |
-| 解析ツール | jadx-gui         | 最新版          |
+| 項目       | 使用技術          | バージョン   |
+|------------|-------------------|--------------|
+| 開発言語   | Python            | 3.11.11+     |
+| 開発環境   | iOS               | 26 Beta 2    |
+| OS         | Windows           | 11           |
+| エディタ   | Visual Studio Code | 最新版       |
+| 通信解析   | Reqable Pro       | 最新版       |
+| 解析ツール | jadx-gui          | 最新版       |
 
 ---
 
@@ -136,12 +137,13 @@ https://github.com/neko3da4/CHRFORGE/issues/1
 
 ## 先駆者への敬意
 
-| プロジェクト       | 状況     | 説明               | リポジトリリンク                                 |
-|--------------------|----------|--------------------|------------------------------------------------|
-| CHRLINE            | アーカイブ | 基盤技術とインスピレーション | [リンク](https://github.com/DeachSword/CHRLINE)          |
-| CHRLINE-Thrift     | 技術版   | プロトコル実装の参考    | [リンク](https://github.com/DeachSword/CHRLINE-Thrift)   |
-| CHRLINE-Patch      | 復活版   | 継続開発              | [リンク](https://github.com/WEDeach/CHRLINE-Patch)       |
-| line-py            | 更新停止 | 元祖ライブラリ          | [リンク](https://github.com/fadhiilrachman/line-py)      |
+| プロジェクト       | 状況       | 説明                   | リポジトリリンク                              |
+|--------------------|------------|------------------------|----------------------------------------------|
+| CHRLINE            | アーカイブ | 基盤技術とインスピレーション | [リンク](https://github.com/DeachSword/CHRLINE)     |
+| CHRLINE-Thrift     | Thrift版   | プロトコル実装の参考      | [リンク](https://github.com/DeachSword/CHRLINE-Thrift) |
+| CHRLINE-Patch      | 復活版     | 継続開発                | [リンク](https://github.com/WEDeach/CHRLINE-Patch)     |
+| line-py            | 更新停止   | 元祖ライブラリ            | [リンク](https://github.com/fadhiilrachman/line-py)    |
+| linejs             | js版       | JavaScriptによる実装例   | [リンク](https://github.com/evex-dev/linejs)            |
 
 ---
 
