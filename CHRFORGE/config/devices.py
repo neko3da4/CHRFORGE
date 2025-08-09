@@ -2,6 +2,7 @@
 """
 Device configuration module for CHRFORGE client.
 Provides device-specific settings and configurations in a clean, object-oriented manner.
+Includes compatibility and version alignment with TypeScript version.
 """
 
 from __future__ import annotations
@@ -101,7 +102,7 @@ class DesktopWindowsConfig(DeviceConfigurationStrategy):
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
         return DeviceDetails(
             device=DeviceType.DESKTOPWIN,
-            app_version=version or "9.8.0.3597",
+            app_version=version or "9.2.0.3403",
             system_name="WINDOWS",
             system_version="10.0.0-NT-x64",
             system_model="KORONE-MY-WAIFU",
@@ -118,8 +119,9 @@ class DesktopMacConfig(DeviceConfigurationStrategy):
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
         return DeviceDetails(
             device=DeviceType.DESKTOPMAC,
-            app_version=version or "8.1.1.3145",
+            app_version=version or "9.2.0.3402",
             system_name="MAC",
+            system_version="12.1.4",
             system_model="KORONE-MY-WAIFU",
         )
 
@@ -134,7 +136,7 @@ class ChromeOSConfig(DeviceConfigurationStrategy):
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
         return DeviceDetails(
             device=DeviceType.CHROMEOS,
-            app_version=version or "3.1.0",
+            app_version=version or "3.0.3",
             system_name="Chrome_OS",
             system_version="1",
             system_model="Chrome",
@@ -154,6 +156,7 @@ class AndroidConfig(DeviceConfigurationStrategy):
             device=DeviceType.ANDROID,
             app_version=version or "13.4.1",
             system_name="Android OS",
+            system_version="12.1.4",
         )
 
     @property
@@ -169,6 +172,7 @@ class AndroidSecondaryConfig(DeviceConfigurationStrategy):
             device=DeviceType.ANDROIDSECONDARY,
             app_version=version or "13.4.1",
             system_name="Android OS",
+            system_version="12.1.4",
             is_secondary=True,
         )
 
@@ -182,7 +186,10 @@ class iOSConfig(DeviceConfigurationStrategy):
 
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
         return DeviceDetails(
-            device=DeviceType.IOS, app_version=version or "13.11.0", system_name="iOS"
+            device=DeviceType.IOS,
+            app_version=version or "13.3.0",
+            system_name="iOS",
+            system_version="12.1.4",
         )
 
     @property
@@ -194,10 +201,12 @@ class iPadConfig(DeviceConfigurationStrategy):
     """Configuration strategy for iPad devices."""
 
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
+        # system_name is "iOS" to match TS interface
         return DeviceDetails(
             device=DeviceType.IOSIPAD,
-            app_version=version or "13.11.0",
-            system_name="iPadOS",
+            app_version=version or "13.3.0",
+            system_name="iOS",
+            system_version="12.1.4",
             system_model="iPad5,1",
         )
 
@@ -212,8 +221,9 @@ class WatchOSConfig(DeviceConfigurationStrategy):
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
         return DeviceDetails(
             device=DeviceType.WATCHOS,
-            app_version=version or "13.11.0",
+            app_version=version or "13.3.0",
             system_name="Watch OS",
+            system_version="12.1.4",
         )
 
     @property
@@ -227,8 +237,9 @@ class WearOSConfig(DeviceConfigurationStrategy):
     def get_device_details(self, version: Optional[str] = None) -> DeviceDetails:
         return DeviceDetails(
             device=DeviceType.WEAROS,
-            app_version=version or "1.4.1",
+            app_version=version or "13.4.1",
             system_name="Wear OS",
+            system_version="12.1.4",
         )
 
     @property
@@ -244,6 +255,7 @@ class VisionOSConfig(DeviceConfigurationStrategy):
             device=DeviceType.VISIONOS,
             app_version=version or "1.0.0",
             system_name="visionOS",
+            system_version="12.1.4",
             system_model="RealityDevice14,1",
         )
 
